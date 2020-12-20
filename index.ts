@@ -9,7 +9,7 @@ const imageName = "crmapp";
 const myImage = new docker.Image(imageName, {
     imageName: pulumi.interpolate`gcr.io/${gcp.config.project}/${imageName}:latest`,
     build: {
-    context: "./crmapp",
+    context: "./CRMApp",
     },
 });
 
