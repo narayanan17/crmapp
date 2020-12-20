@@ -1,0 +1,4 @@
+config:
+  gcp:project: tst
+  gcp:region: us-west1-a
+  pulumi:template: gcp-typescript
