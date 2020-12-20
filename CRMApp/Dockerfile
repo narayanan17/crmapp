@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["CRMApp.csproj", "crmapp"]
+COPY ["CRMApp.csproj", "crmapp/"]
 RUN dotnet restore "crmapp/CRMApp.csproj"
 COPY . ./
 
